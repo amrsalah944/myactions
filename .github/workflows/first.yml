@@ -4,7 +4,7 @@ on: push
 
 jobs:
   job1:
-    name: First job
+    name: First job from ${{ github.actor }} is learning GitHub Actions
     runs-on: ubuntu-latest
     steps:
     - name: Step One
@@ -13,7 +13,7 @@ jobs:
       run: env | sort
 
   job2:
-    name: Second job
+    name: Second job from ${{ github.actor }}
     runs-on: windows-latest
     steps:
     - name: Step One
