@@ -12,7 +12,7 @@ jobs:
     - name: Step Two
       run: env | sort
     - name: Step Three Creating artifacts
-      uses: actions/upload-artifacts
+      uses: actions/upload-artifacts@v3
 
   job2:
     name: Second job from ${{ github.actor }}
@@ -23,4 +23,4 @@ jobs:
     - name: Step Two
       run: "Get-ChildItem Env: | Sort-Object Name"
     - name: Step Three Download artifacts
-      uses: actions/download-artifacts
+      uses: actions/download-artifacts@v3
